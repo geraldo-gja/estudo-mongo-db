@@ -1,4 +1,4 @@
-package br.com.mongodb.entity;
+package br.com.mongodb.rodrigofreitas.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

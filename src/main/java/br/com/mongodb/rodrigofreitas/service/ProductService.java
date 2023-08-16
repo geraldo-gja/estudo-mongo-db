@@ -1,10 +1,10 @@
-package br.com.mongodb.service;
+package br.com.mongodb.rodrigofreitas.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.mongodb.entity.Product;
-import br.com.mongodb.repository.ProductRepository;
+import br.com.mongodb.rodrigofreitas.entity.Product;
+import br.com.mongodb.rodrigofreitas.repository.ProductRepository;
 
 @Service
 public class ProductService {

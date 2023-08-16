@@ -1,9 +1,9 @@
-package br.com.mongodb.repository;
+package br.com.mongodb.rodrigofreitas.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import br.com.mongodb.entity.Product;
+import br.com.mongodb.rodrigofreitas.entity.Product;
 
 public interface ProductRepository extends MongoRepository<Product, String> {
 
