@@ -1,7 +1,10 @@
-package br.com.mongodb;
+package br.com.mongodb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import br.com.mongodb.entity.Product;
+import br.com.mongodb.repository.ProductRepository;
 
 @Service
 public class ProductService {
@@ -9,8 +12,7 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepository;
 	
-	public void save(String name, String description){
-		
+	public void save(String name, String description){	
 		//Product product = new Product(name, description); //sem ID
 		Product product = new Product("1",name, description); //com ID
 		
@@ -20,7 +22,6 @@ public class ProductService {
 	
 	//criei esse método pq no vídeo ele apenas apaga e substitui e método anterior
 	public void find(String name){
-		
 		Product product = this.productRepository.findBlusa(name);
 		System.out.println(product.getDescription());
 	}
